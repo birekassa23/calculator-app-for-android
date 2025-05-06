@@ -4,7 +4,3 @@ node_modules
 
 # === Android (React Native) ===
 android
-
-capacitor.config.json
-
-
