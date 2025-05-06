@@ -1,0 +1,11 @@
+# === Node.js ===
+node_modules
+
+
+# === Android (React Native) ===
+android
+www
+capacitor.config.json
+package-lock.json
+package.json
+readMe.md
