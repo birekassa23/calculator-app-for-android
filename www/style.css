@@ -1,0 +1,136 @@
+/* General Body Styling */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.client-name {
+    padding-top: 0;
+    margin-top: 0;
+}
+
+.client-name,
+.signature {
+    color: black;
+    font-size: 18px;
+    font-weight: bolder;
+    margin: 10px 0;
+    text-align: center;
+}
+
+
+
+/* Calculator Container */
+.calculator {
+    background-color: #e0d9d9;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    margin-bottom: 20px;
+}
+
+/* Display Styling */
+.display {
+    width: 90%;
+    min-height: 30%;
+    font-size: 48px;
+    font-weight: bold;
+    text-align: right;
+    padding: 20px;
+    border: none;
+    margin: 20px;
+    background-color: white;
+    color: black;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 0;
+}
+
+/* Button Grid Layout */
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+/* Button Styling */
+button {
+    padding: 20px;
+    font-size: 32px;
+    font-weight: bold;
+    border: none;
+    border-radius: 12px;
+    background-color: #444;
+    color: #fff;
+    transition: all 0.3s ease;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Button Hover Effects */
+button:hover {
+    background-color: #777375;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+
+/* Wider "=" Button */
+button:nth-child(18) {
+    grid-column: span 2;
+    background-color: rgb(21, 21, 160)
+}
+
+/* Wider "ሁሉንም አጥፋ" Button */
+.buttons button:nth-child(1) {
+    grid-column: span 2;
+    background-color: #e74c3c;
+    /* Red clear button */
+}
+
+.buttons button:nth-child(1):hover {
+    background-color: #c0392b;
+    /* Darker red on hover */
+}
+
+.buttons button:nth-child(2) {
+    background-color: red
+        /* Red clear button */
+}
+
+.buttons button:nth-child(2):hover {
+    background-color: #c0392b;
+    /* Darker red on hover */
+}
+
+/* Make calculator fully responsive */
+@media (max-width: 1000px) {
+    .calculator {
+        min-width: 90%;
+        min-height: 100%;
+        padding: 10px;
+    }
+
+    .display {
+        font-size: 42px;
+        max-width: 90%;
+    }
+
+    button {
+        padding: 15px;
+        font-size: 28px;
+    }
+}
